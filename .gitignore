@@ -1,0 +1,12 @@
+*~
+*.pyc
+*.class
+*.swp
+*.log
+*.retry
+*.tfstate
+*.backup
+.vagrant
+.pytest_cache/
+.mypy_cache/
+ansible/external-roles/

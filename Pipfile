@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dash = "==0.28.1"
+dash-html-components = "==0.13.2"
+dash-core-components = "==0.30.2"
+yapf = "*"
+ipython = "*"
+pandas = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"

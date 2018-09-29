@@ -1,0 +1,23 @@
+---
+- name: install pip3
+  apt: name=python3-pip state=installed
+
+- name: install httpie
+  pip: name=httpie state=present
+
+- name: install http-prompt
+  pip: name=http_prompt state=present
+
+- name: install stormssh
+  pip: name=stormssh state=present
+
+- name: install invoke
+  pip: name=invoke state=present
+
+- name: install flake8
+  pip: name=flake8 state=present
+
+- name: install pipenv
+  pip: name=pipenv state=present
+
+
