@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
-    "start": "python3 -m http.server"
+    "start": "python3 -m http.server",
+    "webpack": "webpack"
   },
   "author": "",
   "license": "ISC",

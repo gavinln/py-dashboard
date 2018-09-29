@@ -1,0 +1,10 @@
+session_name: Synchronize node code from Linux home to shared folders
+windows:
+- window_name: code_sync
+  layout: even-vertical
+  shell_command_before:
+    - cd ~/es6-tutorial  # run as a first command in all panes
+  panes:
+    - watch -n 5 rsync -avhr --exclude node_modules /vagrant/es6-tutorial ~/
+    - echo "Running synchronize code in other pane. To start server: npm start"
+

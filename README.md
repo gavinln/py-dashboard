@@ -47,43 +47,42 @@ Project to learn about the following technologies
 [100]: https://github.com/ccoenraets/es6-tutorial
 
 1. Change to the home directory
-cd ~
-
-2. Copy code from the shared folder
-cp -r /vagrant/es6-tutorial ~
-
-3. Change to the tutorial directory
 
     ```
-    cd es6-tutorial
+    cd ~
     ```
 
-4. Synchronize to shared folder
+2. Synchronize shared folder to home directory
 
     ```
-    watch -n 30 rsync -avhr --exclude node_modules ~/es6-tutorial /vagrant
+    # watch -n 30 rsync -avhr --exclude node_modules ~/es6-tutorial /vagrant
+    tmuxp load /vagrant/python/sync_code_tmux.yml
     ```
 
-5. Create a package.json (only the first time)
+3. Change to the home tutorial directory
+
+    ```
+    cd ~/es6-tutorial
+    ```
+
+4. Create a package.json (only the first time)
 
     ```
     # npm init
     ```
 
-6. Install the babel-cli and babel-core modules
+5. Install modules (first time only)
 
     ```
     # npm install --no-bin-links babel-cli babel-core --save-dev
     npm install babel-cli babel-core --save-dev
+    npm install babel-preset-es2015 --save-dev  # ECMA Script 2015
+    # npm install babel-loader webpack webpack-cli --save-dev
+    npm install -D babel-loader @babel/core @babel/preset-env webpack --save-dev
+    npm install -D babel-loader  @babel/preset-react --save-dev
     ```
 
-7. Setup the ECMA Script 2015 preset
-
-    ```
-    npm install babel-preset-es2015 --save-dev
-    ```
-
-8. Update packages
+6. Update packages
 
     ```
     npm update --no-optional
@@ -97,9 +96,24 @@ cp -r /vagrant/es6-tutorial ~
 
 10. Add to package.json (if needed)
 
+    ```
     "scripts": {
         "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
         "start": "python3 -m http.server"
     },
     ```
+
+11. Run Babel to convert ES6
+
+    ```
+    # npm run babel
+    npm run webpack
+    ```
+
+### Modify code
+
+
+
+
+
 
