@@ -44,26 +44,62 @@ Project to learn about the following technologies
 
 ### Setup the ES6 (ES2015) [tutorial project][100]
 
-[100]: http://ccoenraets.github.io/es6-tutorial/
+[100]: https://github.com/ccoenraets/es6-tutorial
 
-1. Change to the project directory
-cd /vagrant/es6-tutorial
+1. Change to the home directory
+cd ~
 
-2. Create a package.json
-npm init
+2. Copy code from the shared folder
+cp -r /vagrant/es6-tutorial ~
 
-3. Install the babel-cli and babel-core modules
-sudo npm install --no-bin-links babel-cli babel-core --save-dev
+3. Change to the tutorial directory
 
-4. Setup the ECMA Script 2015 preset
-sudo npm install --no-bin-links babel-preset-es2015 --save-dev
+    ```
+    cd es6-tutorial
+    ```
 
-5. Add to package.json
-"scripts": {
-    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
-    "start": "python3 -m http.server"
-},
+4. Synchronize to shared folder
 
+    ```
+    watch -n 30 rsync -avhr --exclude node_modules ~/es6-tutorial /vagrant
+    ```
 
-## TODO
+5. Create a package.json (only the first time)
+
+    ```
+    # npm init
+    ```
+
+6. Install the babel-cli and babel-core modules
+
+    ```
+    # npm install --no-bin-links babel-cli babel-core --save-dev
+    npm install babel-cli babel-core --save-dev
+    ```
+
+7. Setup the ECMA Script 2015 preset
+
+    ```
+    npm install babel-preset-es2015 --save-dev
+    ```
+
+8. Update packages
+
+    ```
+    npm update --no-optional
+    ```
+
+9. Setup the PATH
+
+    ```
+    PATH=~/es6-tutorial/node_modules/.bin:$PATH
+    ```
+
+10. Add to package.json (if needed)
+
+    "scripts": {
+        "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+        "start": "python3 -m http.server"
+    },
+    ```
 
