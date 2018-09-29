@@ -14,7 +14,7 @@ Project to learn about the following technologies
     3. ES2015 - also called ES6
     4. Babel
 
-## Tools
+## Run tutorial
 
 ### Install nodejs and npm
 

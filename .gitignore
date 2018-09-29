@@ -10,3 +10,4 @@
 .pytest_cache/
 .mypy_cache/
 ansible/external-roles/
+es6-tutorial/node_modules/
