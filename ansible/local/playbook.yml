@@ -14,12 +14,12 @@
   roles:
     - role: geerlingguy.ntp
 
-    #- role: geerlingguy.nodejs
-      #nodejs_version: "6.x"
-      #nodejs_install_npm_user: "vagrant"
-      #npm_config_unsafe_perm: "true"
-      #nodejs_npm_global_packages:
-       #- name: jslint
+    - role: geerlingguy.nodejs
+      nodejs_version: "8.x"
+      nodejs_install_npm_user: "vagrant"
+      npm_config_unsafe_perm: "true"
+      nodejs_npm_global_packages:
+       - name: jslint
 
   tasks:
     - include: init-setup.yml

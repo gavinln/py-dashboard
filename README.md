@@ -39,7 +39,7 @@ Project to learn about the following technologies
 4. Check the version
 
     ```
-    npm -v
+    npm version
     ```
 
 ### Setup the ES6 (ES2015) [tutorial project][100]
