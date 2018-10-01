@@ -118,3 +118,9 @@ Project to learn about the following technologies
 is built on Plotly.js, React and Flask
 
 [200]: https://github.com/plotly/dash
+
+1. Change to the samples directory
+
+    ```
+    cd python/dash
+    ```
