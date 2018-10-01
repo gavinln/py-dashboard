@@ -124,3 +124,16 @@ is built on Plotly.js, React and Flask
     ```
     cd python/dash
     ```
+
+2. Start the Python environment
+
+    ```
+    pipenv shell
+    ```
+
+3. Run an example
+
+    ```
+    python app-bar-graph.py
+    ```
+
