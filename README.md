@@ -14,7 +14,7 @@ Project to learn about the following technologies
     3. ES2015 - also called ES6
     4. Babel
 
-## Run tutorial
+## Run ES2015 tutorial
 
 ### Install nodejs and npm
 
@@ -112,8 +112,9 @@ Project to learn about the following technologies
 
 ### Modify code
 
+## Run Plotly dash tutorials
 
+[Dash][200] is a Python framework for building analytical web applications. It
+is built on Plotly.js, React and Flask
 
-
-
-
+[200]: https://github.com/plotly/dash
