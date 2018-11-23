@@ -55,7 +55,7 @@ Project to learn about the following technologies
 2. Synchronize shared folder to home directory
 
     ```
-    # watch -n 30 rsync -avhr --exclude node_modules ~/es6-tutorial /vagrant
+    # watch -n 5 rsync -avhr --exclude node_modules ~/es6-tutorial /vagrant
     tmuxp load /vagrant/python/sync_code_tmux.yml
     ```
 
