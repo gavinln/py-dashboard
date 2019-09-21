@@ -1,0 +1,17 @@
+session_name: plotly-dash
+start_directory: "."
+windows:
+- window_name: edit-run
+  layout: even-horizontal
+  focus: true
+  shell_command_before:
+    - echo initial command
+  panes:
+    - vim
+    - shell_command: echo "started vim in other pane"
+      focus: true
+- window_name: git
+  layout: even-horizontal
+  panes:
+    - shell_command: git repl
+    - vifm .
