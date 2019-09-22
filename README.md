@@ -37,12 +37,38 @@ pipenv shell
 python app-bar-graph.py
 ```
 
-## Setup the environment
+## Miscellaneous
+
+### Setup the environment manually
 
 ```
 pipenv --python /usr/bin/python3
 pipenv install dash
 pipenv install yapf
+pipenv install flake8
 pipenv install ipython
 pipenv install pandas
+pipenv install seaborn
+pipenv install Jupyter
+pipenv install jupyter-contrib-extensions
+pipenv install ipywidgets
+pipenv install voila
 ```
+
+### Setup Jupyter notebook extensions
+
+1. Install extensions
+
+```
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
+```
+2. Go to the Edit menu nbextensions config option to setup plugins
+
+3. Some useful plugins
+
+* Code prettify (uses yapf)
+* Collapsible Headings
+* ExecuteTime
+* Select CodeMirror Keymap
+* Table of Contents (2)

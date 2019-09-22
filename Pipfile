@@ -8,8 +8,14 @@ verify_ssl = true
 [packages]
 dash = "*"
 yapf = "*"
+flake8 = "*"
 ipython = "*"
 pandas = "*"
+seaborn = "*"
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+voila = "*"
+ipywidgets = "*"
 
 [requires]
 python_version = "3.6"
