@@ -37,7 +37,7 @@ pipenv shell
 python app-bar-graph.py
 ```
 
-## Miscellaneous
+## Setup the environemnt
 
 ### Setup the environment manually
 
@@ -72,3 +72,9 @@ jupyter nbextension enable --py widgetsnbextension
 * ExecuteTime
 * Select CodeMirror Keymap
 * Table of Contents (2)
+
+## Links
+
+[Reporting dashboard using Dash][1000]
+
+[1000]: https://towardsdatascience.com/how-to-build-a-complex-reporting-dashboard-using-dash-and-plotl-4f4257c18a7f
