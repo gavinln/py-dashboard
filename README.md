@@ -1,28 +1,31 @@
-# plotly-dash
+# py-dashboard
 
-* Source code - [Bitbucket][1]
+* Source code - [Github][1]
 * Author - Gavin Noronha - <gavinln@hotmail.com>
 
-[1]: https://bitbucket.org/gavinln/plotly-dash/
+[1]: https://github.com/gavinln/py-dashboard
 
 ## About
 
-Project to learn about the following technologies
+This is a project with examples of Python dashboard solutions including.
 
-1. Plotly Javascript components
-2. Dash dashboard
+    1. Plotly dash components
+    2. Pyviz panel components from Anaconda
+    3. Jupyter ipywidgets and Voila
+
+[100]: https://github.com/plotly/dash
+[200]: https://github.com/pyviz/panel
+[300]: https://github.com/voila-dashboards/voila
 
 ## Run Plotly dash tutorials
 
-[Dash][200] is a Python framework for building analytical web applications. It
+Dash is a Python framework for building analytical web applications. It
 is built on Plotly.js, React and Flask
-
-[200]: https://github.com/plotly/dash
 
 1. Change to the project directory
 
 ```bash
-cd plotly-dash
+cd py-dashboard
 ```
 
 2. Start the Python environment
