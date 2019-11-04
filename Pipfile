@@ -7,15 +7,16 @@ verify_ssl = true
 
 [packages]
 dash = "*"
-yapf = "*"
-flake8 = "*"
 ipython = "*"
 pandas = "*"
 seaborn = "*"
 jupyter = "*"
 jupyter-contrib-nbextensions = "*"
-voila = "*"
+yapf = "*"
+flake8 = "*"
 ipywidgets = "*"
+voila = "*"
+panel = "*"
 
 [requires]
 python_version = "3.6"
