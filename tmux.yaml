@@ -7,9 +7,9 @@ windows:
   shell_command_before:
     - echo initial command
   panes:
-    - vim
     - shell_command: echo "started vim in other pane"
       focus: true
+    - ./scripts/jupyter-notebook.sh
 - window_name: git
   layout: even-horizontal
   panes:
