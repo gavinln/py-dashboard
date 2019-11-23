@@ -17,6 +17,9 @@ flake8 = "*"
 ipywidgets = "*"
 voila = "*"
 panel = "*"
+requests = "*"
+hvplot = "*"
+faker = "*"
 
 [requires]
 python_version = "3.6"
