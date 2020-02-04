@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-dash = "*"
 ipython = "*"
 pandas = "*"
 seaborn = "*"
@@ -16,11 +15,9 @@ yapf = "*"
 flake8 = "*"
 ipywidgets = "*"
 voila = "*"
-panel = "*"
-requests = "*"
-hvplot = "*"
 faker = "*"
 qgrid = "*"
+statsmodels = "*"
 
 [requires]
 python_version = "3.6"

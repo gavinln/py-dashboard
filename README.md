@@ -47,7 +47,6 @@ python app-bar-graph.py
 ```
 pipenv --python /usr/bin/python3
 pipenv install ipython
-pipenv install dash
 pipenv install pandas
 pipenv install seaborn
 pipenv install jupyter
@@ -56,7 +55,11 @@ pipenv install yapf
 pipenv install flake8
 pipenv install ipywidgets
 pipenv install voila
-pipenv install panel
+pipenv install faker
+pipenv install qgrid
+pipenv install statsmodels
+# pipenv install dash
+# pipenv install panel
 ```
 
 ### Setup Jupyter notebook extensions

@@ -10,15 +10,16 @@ endif
 
 ROOT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-.PHONY: list
-list:
-	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '{if ($$1 !~ "^[#.]") {print $$1}}'
+.DEFAULT_GOAL=help
+.PHONY: help
+help:  ## help for this Makefile
+	@grep -E '^[a-zA-Z0-9_\-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-jupyter:
-	bash ./scripts/jupyter_notebook.sh
+jupyter-nb:  ## start jupyter notebook
+	bash $(ROOT_DIR)/scripts/jupyter-notebook.sh
 
-voila:
-	bash ./scripts/voila.sh
+voila-run:  ## start voila dashboard
+	bash $(ROOT_DIR)/scripts/voila-run.sh
 
 tmux:
 	tmuxp load tmux.yaml
