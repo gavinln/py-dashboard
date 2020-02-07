@@ -58,6 +58,12 @@ pipenv install voila
 pipenv install faker
 pipenv install qgrid
 pipenv install statsmodels
+pipenv install jupytext
+pipenv install sqlalchemy
+pipenv install pyarrow
+pipenv install psutil
+pipenv install modin
+pipenv install modin[ray]
 # pipenv install dash
 # pipenv install panel
 ```
@@ -79,6 +85,12 @@ jupyter nbextension enable --py widgetsnbextension
 * ExecuteTime
 * Select CodeMirror Keymap
 * Table of Contents (2)
+
+4. Install Voila dashboards
+
+```
+jupyter serverextension enable voila --sys-prefix
+```
 
 ## Links
 

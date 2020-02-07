@@ -13,4 +13,4 @@ JUPYTER_CMD="jupyter notebook --port=8888 --ip=$IP --no-browser"
 
 BASIC_NOTEBOOKS=$SCRIPT_DIR/../notebooks
 
-pipenv run $JUPYTER_CMD --notebook-dir=$BASIC_NOTEBOOKS
+$JUPYTER_CMD --notebook-dir=$BASIC_NOTEBOOKS

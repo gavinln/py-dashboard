@@ -18,6 +18,11 @@ voila = "*"
 faker = "*"
 qgrid = "*"
 statsmodels = "*"
+jupytext = "*"
+sqlalchemy = "*"
+pyarrow = "*"
+psutil = "*"
+modin = {extras = ["ray"],version = "*"}
 
 [requires]
 python_version = "3.6"

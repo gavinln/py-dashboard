@@ -1,17 +1,17 @@
-session_name: plotly-dash
+session_name: py-dashboard
 start_directory: "."
 windows:
 - window_name: edit-run
-  layout: even-horizontal
+  layout: even-vertical
   focus: true
   shell_command_before:
     - echo initial command
   panes:
     - shell_command: echo "started vim in other pane"
       focus: true
-    - ./scripts/jupyter-notebook.sh
+    - shell_command: echo "make jupyter-nb to run jupyter notebook"
 - window_name: git
-  layout: even-horizontal
+  layout: even-vertical
   panes:
     - shell_command: git repl
     - vifm .
