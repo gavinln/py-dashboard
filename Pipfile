@@ -6,23 +6,13 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-ipython = "*"
 pandas = "*"
 seaborn = "*"
-jupyter = "*"
-jupyter-contrib-nbextensions = "*"
-yapf = "*"
-flake8 = "*"
+jupyterlab = "*"
+black = "*"
+plotly = "*"
 ipywidgets = "*"
-voila = "*"
-faker = "*"
-qgrid = "*"
-statsmodels = "*"
-jupytext = "*"
-sqlalchemy = "*"
-pyarrow = "*"
-psutil = "*"
-modin = {extras = ["ray"],version = "*"}
+jupyter-dash = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.8"
